@@ -13,13 +13,17 @@ Each node in the graph is either a face, edge, or vertex (aka geometry primitive
 This system is built on top of Unity's already established physics engine so that it can take advantage of Unity's collision detection system. You can use the `onCollision` hooks you are already used to using.
 
 ![Mesh Graph Visualizer](http://i.imgur.com/B8vrfQ5.jpg)
+
 Left: A regular old mesh. Right: Debug mode draws a sphere at the position of each node in the graph. Red node are triangles, blue nodes are vertices, and green nodes are edges.
 
 ![3 Body](http://i.imgur.com/mCazOHI.gif)
+
 3 bodies are contrained to remain in contact with the triangle. A repulsive `1/r^2` force is between them. Distance is calculated in world-space. In other words, distance is not limited a path on the surfact of the triangle.
 
 ![Electrons](http://i.imgur.com/aR5dwv0.gif)
+
 This simulation illustrates why tesla coils arc from sharp edges. Electrons will cluster at sharp edges, thus increasing the voltage in those places. Bodies are repulsed by a `1/r^2` force. Velocity is dampened. Distance is calculated in world-space.
 
 ![Camera follows sphere](http://i.imgur.com/d6kIL8L.gif)
+
 The camera's target is an object which is contrained to the surface of a triangle. When the sphere reaches the edge of the triangle, it remains in contact with the edge. It wraps around to the other side of the triangle. The camera follows the object, so it appears the that object is standing still while the triangle is flipping over. It almost looks like the triangle is unfolding itself just in time to stay under the triangle, similar to how a red carpet might be rolled out in front of someone.
