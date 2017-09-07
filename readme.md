@@ -16,13 +16,19 @@ This system is built on top of Unity's already established physics engine so tha
 
 Left: A regular old mesh. Right: Debug mode draws a sphere at the position of each node in the graph. Red node are triangles, blue nodes are vertices, and green nodes are edges.
 
+___
+
 ![3 Body](http://i.imgur.com/mCazOHI.gif)
 
 3 bodies are contrained to remain in contact with the triangle. A repulsive `1/r^2` force is between them. Distance is calculated in world-space. In other words, distance is not limited a path on the surfact of the triangle.
 
+___
+
 ![Electrons](http://i.imgur.com/aR5dwv0.gif)
 
 This simulation illustrates why tesla coils arc from sharp edges. Electrons will cluster at sharp edges, thus increasing the voltage in those places. Bodies are repulsed by a `1/r^2` force. Velocity is dampened. Distance is calculated in world-space.
+
+___
 
 ![Camera follows sphere](http://i.imgur.com/d6kIL8L.gif)
 
