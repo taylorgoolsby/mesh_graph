@@ -32,4 +32,4 @@ ___
 
 ![Camera follows sphere](http://i.imgur.com/d6kIL8L.gif)
 
-The camera's target is an object which is contrained to the surface of a triangle. When the sphere reaches the edge of the triangle, it remains in contact with the edge. It wraps around to the other side of the triangle. The camera follows the object, so it appears the that object is standing still while the triangle is flipping over. It almost looks like the triangle is unfolding itself just in time to stay under the triangle, similar to how a red carpet might be rolled out in front of someone.
+The camera's target is an object (red sphere) which is constrained to the surface of a triangle. When the sphere reaches the edge of the triangle, it remains in contact with the edge. It wraps around to the other side of the triangle. The camera follows the sphere, so it appears the that sphere is standing still while the triangle is flipping over. It almost looks like the triangle is unfolding itself just in time to stay under the sphere, similar to how a red carpet might be rolled out in front of someone.
